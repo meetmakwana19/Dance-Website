@@ -1,0 +1,49 @@
+extends base.pug 
+//- means extending base.pug and filling that template of base.pug over here
+
+//- put this in block scripts line of base.pug
+block scripts 
+    script(src='/static/index.js') 
+
+//- put this in block style line of base.pug
+block style 
+    style
+      include  ../static/style.css
+
+//- put this in block style content of base.pug and copied pasted from index.pug
+block content
+    
+    section#introSection 
+      div Welcome to Meet's Dance Academy 
+      div.small Eat Sleep Dance Repeat
+    section#missionSection 
+      h2 Our Mission
+      div.card 
+        h3 Dance Perfection
+        div.card-box
+          div.card-img 
+            img(src="/static/img/1.png", alt="")
+          div.card-content 
+            p This is the best Dance Academy of 2021
+      div.card 
+        h3 Dance The Way You Like
+        div.card-box
+          div.card-img 
+            img(src="/static/img/2.png", alt="")
+          div.card-content 
+            p This is the best Dance Academy of 2021
+      div.card 
+        h3 Dance Experts Coaching
+        div.card-box
+          div.card-img 
+            img(src="/static/img/3.png", alt="")
+          div.card-content 
+            p This is the best Dance Academy of 2021
+    section#sponsorSection 
+      h2 Our Sponsers 
+      div#sponsors 
+        img(src="/static/img/logo1.png", alt="Sponsor Image" class="spImage")
+        img(src="/static/img/logo2.png", alt="Sponsor Image" class="spImage")
+        img(src="/static/img/logo3.png", alt="Sponsor Image" class="spImage") 
+        img(src="/static/img/logo4.png", alt="Sponsor Image" class="spImage")
+    

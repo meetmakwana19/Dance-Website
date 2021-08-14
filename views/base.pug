@@ -1,0 +1,23 @@
+//- base.pug and will fill this base template with the help of home.pug
+doctype html
+html
+  head
+    title Meet Dance Academy - #{title}
+    block scripts
+    block style 
+      
+  body
+    nav#navbar.top 
+      ul 
+        div#logo
+          img(src="/static/img/logo.png", alt="logo.png")
+          | MDA
+        li #[a(href="/") Home]
+        li #[a(href="/") Services]
+        li #[a(href="/") Class Info]
+        li #[a(href="/") About]  
+        li #[a(href="/contact") Contact Us]
+    block content
+    //- block footer
+    footer#footer 
+        | Copyright © 2021 MeetDanceAcademy.com | All rights reserved
