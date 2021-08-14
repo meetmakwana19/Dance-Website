@@ -1,0 +1,27 @@
+git config --global user.name Meet
+
+git config --global user.email "example.@gmail.com"
+
+touch .gitignore
+
+git init
+
+git add .
+
+git commit -m "Initial commit"
+
+git status
+
+ssh-keygen -t ed25519 -C "example@gmail.com"
+
+cat <path> 
+for eg : /c/Users/Meet/.ssh/id_edxxxx.pub
+ssh-(ssh key is here)
+and now paste this ssh key to github profile sttings>ssh keys> new ssh key.
+
+
+git remote add origin <ssh url.git>
+
+git push origin master
+
+
